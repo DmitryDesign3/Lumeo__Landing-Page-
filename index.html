@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumeo</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header>
+        <div class="container">
+            <div class="header">
+                <img class="Logo-header" src="./image/Logo.svg">
+                <nav class="header-nav">
+                    <ul class="header__menu">
+                        <li class="header-nav__item">
+                            <a href="#mainPage">Главная</a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a href="#collection">Коллекция</a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a href="#aboutUs">О нас</a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a href="#contacts">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-phone">
+                    <ul>
+                        <li class="header-phone__item">
+                            <button>+7 (999) 999-99-99</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MainPage -->
+    <main id="mainPage">
+        <a href="#" id="scrollToTop" class="scroll-to-top">&#8593;</a>
+        <div class="banner-wrap">
+            <div class="container">
+                <div class="banner">
+                    <h1 class="banner__text">Мебель</h1>
+                    <h2 class="banner__text">которая вдохновляет</h2>
+                    <div class="banner-btn">
+                        <a href="#collection" class="text__btn">Посмотреть коллекцию</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Раздел "collection" -->
+    <section id="collection" class="our-choice">
+        <div class="container">
+            <h1 class="page-title">Наш выбор</h1>
+            <!-- Меню категорий -->
+            <nav class="category-menu">
+                <ul class="category-list">
+                    <li class="category-item">
+                        <button class="category-button active" data-category="all">Все</button>
+                    </li>
+                    <li class="category-item">
+                        <button class="category-button" data-category="wardrobes">Шкафы</button>
+                    </li>
+                    <li class="category-item">
+                        <button class="category-button" data-category="sofas">Диваны</button>
+                    </li>
+                    <li class="category-item">
+                        <button class="category-button" data-category="chairs">Стулья</button>
+                    </li>
+                    <li class="category-item">
+                        <button class="category-button" data-category="tables">Столы</button>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Контейнер для карточек товаров -->
+            <div class="product-grid">
+                <!-- Карточка 1 (Sofas) -->
+                <div class="product-card" data-category="sofas">
+                    <img src="./image/Shop/Image 1.png" alt="Шкаф">
+                    <div class="product-info">
+                        <h3 class="product-name">LuxeRest</h3>
+                        <div class="product-rating">★★★★☆</div>
+                        <p class="product-price">25 000 руб.</p>
+                    </div>
+                </div>
+                <!-- Карточка 2 (wardrobes) -->
+                <div class="product-card" data-category="wardrobes">
+                    <img src="./image/Shop/Image 2.png" alt="wardrobes">
+                    <div class="product-info">
+                        <h3 class="product-name">Keeper's Haven</h3>
+                        <div class="product-rating">★★★★★</div>
+                        <p class="product-price">35 000 руб.</p>
+                    </div>
+                </div>
+                <!-- Карточка 3 (chairs) -->
+                <div class="product-card" data-category="chairs">
+                    <img src="./image/Shop/image 3.png" alt="chairs">
+                    <div class="product-info">
+                        <h3 class="product-name">SitEase</h3>
+                        <div class="product-rating">★★★☆☆</div>
+                        <p class="product-price">5 000 руб.</p>
+                    </div>
+                </div>
+                <!-- Карточка 4 (Sofas) -->
+                <div class="product-card" data-category="sofas">
+                    <img src="./image/Shop/Image 4.png" alt="Стол">
+                    <div class="product-info">
+                        <h3 class="product-name">ZenSofa</h3>
+                        <div class="product-rating">★★★★☆</div>
+                        <p class="product-price">15 000 руб.</p>
+                    </div>
+                </div>
+                <!-- Карточка 5 (Sofas) -->
+                <div class="product-card" data-category="sofas">
+                    <img src="./image/Shop/Image 5.png" alt="Стол">
+                    <div class="product-info">
+                        <h3 class="product-name">VelvetCloud</h3>
+                        <div class="product-rating">★★★★☆</div>
+                        <p class="product-price">15 000 руб.</p>
+                    </div>
+                </div>
+                <!-- Карточка 6 (tables) -->
+                <div class="product-card" data-category="tables">
+                    <img src="./image/Shop/Image 6.png" alt="tables">
+                    <div class="product-info">
+                        <h3 class="product-name">FocusForge</h3>
+                        <div class="product-rating">★★★★☆</div>
+                        <p class="product-price">15 000 руб.</p>
+                    </div>
+                </div>
+                <!-- Карточка 7 (wardrobes) -->
+                <div class="product-card" data-category="wardrobes">
+                    <img src="./image/Shop/Image 7.png" alt="wardrobes">
+                    <div class="product-info">
+                        <h3 class="product-name">HideAway</h3>
+                        <div class="product-rating">★★★★☆</div>
+                        <p class="product-price">15 000 руб.</p>
+                    </div>
+                </div>
+                <!-- Карточка 8 (chairs) -->
+                <div class="product-card" data-category="chairs">
+                    <img src="./image/Shop/Image 8.png" alt="chairs">
+                    <div class="product-info">
+                        <h3 class="product-name">EaseSeat</h3>
+                        <div class="product-rating">★★★★☆</div>
+                        <p class="product-price">15 000 руб.</p>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </section>
+    <section id="aboutUs" class="about-us">
+        <div class="container">
+            <div> 
+                <h1 class="page-title">О нас</h1>
+                <!-- Блок с изображением и текстом -->
+                <div class="about-content">
+                    <!-- Текст слева -->
+                    <div class="about-text">
+                        <p>
+                            Наш бренд воплощает современную мебель, где качество и долговечность – норма, а внимание к деталям – наше кредо. Каждая линия и шов проходят строгий контроль, обеспечивая безупречность и уникальность изделия.
+                        </p>
+                        <!-- Одно изображение под текстом -->
+                        <div class="single-image">
+                            <img src="./image/About us/1text/Image 111.png" alt="Фото 1">
+                        </div>
+                        <!-- Второй блок текста -->
+                        <p>
+                            Мы выбираем материалы с заботой о природе, используя устойчивую древесину и экологичные ткани. Так наши клиенты получают роскошь и комфорт с уверенностью в заботе об окружающей среде.
+                        </p>
+                        <!-- Одно изображение под текстом -->
+                        <div class="single-image">
+                            <img src="./image/About us/1text/Image 222.png" alt="Фото 2">
+                        </div>
+                        <!-- Третий блок текста -->
+                        <p>
+                            Наша мебель – это роскошь, которая сохраняет свою красоту и форму на долгие годы. Она становится частью семейной истории, передаваемой из поколения в поколение, символизируя комфорт, стиль и ответственность.
+                        </p>
+                    </div>
+                    <!-- Изображение справа -->
+                    <div class="about-image">
+                        <img src="./image/About us/Imgpof.png" alt="О нас">
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </section>
+    <section id="contacts" class="contacts">
+        <div class="container">
+            <h1 class="page-title">Контакты</h1>
+            
+            <div class="contacts-content">
+                <!-- Левый блок -->
+                <div class="contacts-block">
+                    <div class="contacts-item">
+                        <p class="contacts-label">Адрес</p>
+                        <p class="contacts-text">125009, Россия, г. Москва,<br>ул. Тверская, д. 14</p>
+                        <button class="map-button">На карте</button>
+                    </div>
+                </div>
+    
+                <!-- Центральный блок -->
+                <div class="contacts-block">
+                    <div class="contacts-item">
+                        <p class="contacts-label">Тел.</p>
+                        <p class="contacts-subtitle">Центральный офис</p>
+                        <p class="contacts-phone">+7 (999) 999-99-99</p>
+                        <p class="contacts-subtitle">Ресепшен</p>
+                        <p class="contacts-phone">+7 (909) 909-90-90</p>
+                    </div>
+                </div>
+    
+                <!-- Правый блок -->
+                <div class="contacts-block">
+                    <div class="contacts-item">
+                        <p class="contacts-label">График работы</p>
+                        <p class="contacts-schedule">ПН-ПТ<br>10:00 - 22:00</p>
+                        <p class="contacts-schedule">СБ-ВС<br>10:00 - 22:00</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="contacts-map"></div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <img src="./image/Logo.svg" alt="Lumeo Logo" class="footer-logo">
+                <div class="footer-text">
+                    <p>&copy; 2025 Lumeo. Учебный проект. Все права защищены.</p>
+                    <nav class="footer-nav">
+                        <a href="privacy.html">Политика конфиденциальности</a>
+                        <a href="terms.html">Условия использования</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer-right">
+                <p>Следите за нами:</p>
+                <div class="social-icons">
+                    <a href="#"><img src="./image/icons/vk.svg" alt="VK"></a>
+                    <a href="#"><img src="./image/icons/tg.svg" alt="WhatsApp"></a>
+                    <a href="#"><img src="./image/icons/inst.svg" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+    </footer>    
+    <script src="./script.js"></script>
+</body>
+</html>
